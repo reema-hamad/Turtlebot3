@@ -1,8 +1,5 @@
 # خطوات تثبيت الادوات من أجل المحاكاة لروبوت السلحفاة والتحكم فيه ورسم الخرائط 
 
-
-** خطوات تثبيت الادوات من أجل المحاكاة لروبوت السلحفاة والتحكم فيه ورسم الخرائط 
-
 .  ROS مثبتا بداخله VM قيد التشغيل مع ubuntu كما عملنا مسبقا بأستخدام 
 
 :  نبدأ بكتابة الاوامر البرمجية  التالية   
@@ -34,8 +31,8 @@
 
 1. TurtleBot3  نقوم بتثبيت حزم 
 
- $ sudo apt-get install ros-kinetic-dynamixel-sdk
- $ sudo apt-get install ros-kinetic-turtlebot3-msgs
+  $ sudo apt-get install ros-kinetic-dynamixel-sdk
+  $ sudo apt-get install ros-kinetic-turtlebot3-msgs 
  $ sudo apt-get install ros-kinetic-turtlebot3
 
 1. أدخل هذه الرموز في الجهاز لتثبيت حزم المحاكاة
