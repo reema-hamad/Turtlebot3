@@ -5,17 +5,17 @@
 :  نبدأ بكتابة الاوامر البرمجية  التالية   
 
 1.  : ROS 1 نقوم بتثبيت 
-
- $ sudo apt-get update
- $ sudo apt-get upgrade
- $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
- $ chmod 755 ./install_ros_kinetic.sh 
- $ bash ./install_ros_kinetic.sh
+ ```
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
+$ chmod 755 ./install_ros_kinetic.sh 
+$ bash ./install_ros_kinetic.sh
+ ```
 
 
 1. : التابعة ROS 1 نقوم بتثبيت حزم 
-
-
+ ```
  $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
   ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc \
   ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan \
@@ -25,46 +25,46 @@
   ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro \
   ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
   ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
-
+ ```
 
 
 
 1. TurtleBot3  نقوم بتثبيت حزم 
-
+ ```
   $ sudo apt-get install ros-kinetic-dynamixel-sdk
   $ sudo apt-get install ros-kinetic-turtlebot3-msgs 
- $ sudo apt-get install ros-kinetic-turtlebot3
-
+  $ sudo apt-get install ros-kinetic-turtlebot3
+ ```
 1. أدخل هذه الرموز في الجهاز لتثبيت حزم المحاكاة
 
  * : نثبت المحاكاة 
-
+ ```
  $ cd ~/catkin_ws/src/
  $ git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
  $ cd ~/catkin_ws && catkin_make
-
+ ```
 
 1. ​نقوم بفتح new terminal : 
   
 *  اكتب هذا الأمر
-
+ ```
  $ source ~/catkin_ws/devel/setup.bash
-
+ ```
 *  launch the simulation world هذا الامر لأجل : 
-
+ ```
  $ export TURTLEBOT3_MODEL=burger
  $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
-
+ ```
 
 .  ​نقوم بفتح new terminal : 
 
 * launch the SLAM Node  هذا الامر لأجل 
 
 "Run SLAM Node"
-
+ ```
  $ export TURTLEBOT3_MODEL=burger
  $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
-
+ ```
 
 
 .  ​نقوم بفتح new terminal : 
@@ -72,10 +72,10 @@
 *  : نقوم بتشغيل هذا الأمر لتتمكن من التفاعل والتحكم في الروبوت
 
 Run Teleoperation Node
-
+ ```
  $ export TURTLEBOT3_MODEL=burger
  $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
-
+ ```
 * الآن يمكنك البدء في رسم الخرائط
  terminal عن طريق 
 
@@ -90,9 +90,9 @@ Run Teleoperation Node
 ![Untitled14](https://user-images.githubusercontent.com/85697922/124581762-1115db00-de5a-11eb-925e-e0e317dd5b17.png)
 
 .  نقوم بفتح new terminal لحفظ الخريطة 
-
+ ```
  $ rosrun map_server map_saver -f ~/map
-
+ ```
 ستجد الخريطة في المستندات وهنا صورة لخريطتي
 
 
@@ -105,5 +105,4 @@ Run Teleoperation Node
 
 
 
-
-For more information go to https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/[Robot]
+For more information go to  [Robotis](https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/).
