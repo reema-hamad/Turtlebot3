@@ -103,5 +103,6 @@ Run Teleoperation Node
 *Have fun*
 
 
-For more information go to https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/ .
+For more information go to Robot
+https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/[Robot]
 
