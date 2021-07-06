@@ -1,5 +1,8 @@
 # خطوات تثبيت الادوات من أجل المحاكاة لروبوت السلحفاة والتحكم فيه ورسم الخرائط 
 
+
+** خطوات تثبيت الادوات من أجل المحاكاة لروبوت السلحفاة والتحكم فيه ورسم الخرائط 
+
 .  ROS مثبتا بداخله VM قيد التشغيل مع ubuntu كما عملنا مسبقا بأستخدام 
 
 :  نبدأ بكتابة الاوامر البرمجية  التالية   
@@ -100,8 +103,10 @@ Run Teleoperation Node
 
 
 
-*Have fun*
+*Have fun* 
 
 
 
-For more information go tohttps://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/[Robot]
+
+
+For more information go to https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/[Robot]
